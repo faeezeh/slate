@@ -2,7 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
-// @import 'rtl'; // uncomment to switch to RTL format
+@import 'rtl'; // uncomment to switch to RTL format
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
@@ -23,6 +23,15 @@ under the License.
 ////////////////////////////////////////////////////////////////////////////////
 // GENERAL STUFF
 ////////////////////////////////////////////////////////////////////////////////
+ 
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=El+Messiri&display=swap");html {
+  font-family:  'Almarai', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+
+
 
 html, body {
   color: $main-text;
@@ -74,8 +83,9 @@ html, body {
   // This is the logo at the top of the ToC
   .logo {
     display: block;
-    max-width: 100%;
-    margin-bottom: $logo-margin;
+    max-width: 100px;
+    margin-bottom: 0px;
+    padding: 50px;
   }
 
   &>.search {
@@ -320,6 +330,7 @@ html, body {
   // to place content above the dark box
   position: relative;
   z-index: 30;
+  text-align: justify;
 
   &:after {
     content: '';

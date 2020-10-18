@@ -27,6 +27,7 @@ ready do
   require './lib/multilang.rb'
 end
 
+activate :i18n
 activate :sprockets
 
 activate :autoprefixer do |config|
@@ -61,3 +62,5 @@ set :port, 4567
 helpers do
   require './lib/toc_data.rb'
 end
+
+

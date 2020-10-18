@@ -34,6 +34,11 @@ under the License.
     <style media="screen">
       <%= Rouge::Themes::MonokaiSublimeSlate.render(:scope => '.highlight') %>
     </style>
+
+    <style media="screenRTL">
+      <%= Rouge::Themes::MonokaiSublimeSlate.render(:scope => '.highlight') %>
+    </style>
+
     <style media="print">
       * {
         transition:none!important;
@@ -41,6 +46,7 @@ under the License.
       <%= Rouge::Themes::Base16::Solarized.render(:scope => '.highlight') %>
     </style>
     <%= stylesheet_link_tag :screen, media: :screen %>
+    <%= stylesheet_link_tag :screenRTL, media: :screenRTL %>
     <%= stylesheet_link_tag :print, media: :print %>
     <% if current_page.data.search %>
       <%= javascript_include_tag  "all" %>
