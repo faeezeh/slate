@@ -470,22 +470,22 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-37c5a4e0.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/screenRTL-ad5d82e4.css" rel="stylesheet" media="screenRTL" />
-    <link href="stylesheets/print-d90e0447.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all_nosearch-ea811c3e.js"></script>
+    <link href="../stylesheets/screen-37c5a4e0.css" rel="stylesheet" media="screen" />
+    <link href="../stylesheets/screenRTL-ad5d82e4.css" rel="stylesheet" media="screenRTL" />
+    <link href="../stylesheets/print-d90e0447.css" rel="stylesheet" media="print" />
+      <script src="../javascripts/all_nosearch-ea811c3e.js"></script>
 
   </head>
 
-  <body class="index" data-languages="[]">
+  <body class="ja ja_index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar-cad8cdcb.png" alt="" />
+        <img src="../images/navbar-cad8cdcb.png" alt="" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-3a50bf74.png" class="logo" alt="" />
+      <img src="../images/logo-3a50bf74.png" class="logo" alt="" />
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#prerequisites" class="toc-h1 toc-link" data-title="Prerequisites">Prerequisites</a>
@@ -693,11 +693,11 @@ method implementation, he may be redirected to a third party/acquirer to make th
 
 <p>The &quot;request&quot; and &quot;verify&quot; requests are made server to server.</p>
 <h2 id='diagram'>Diagram</h2>
-<p><img src="images/content/overview-cc5e71f9.png" alt="overview,img" /></p>
+<p><img src="../images/content/overview-cc5e71f9.png" alt="overview,img" /></p>
 <h1 id='1-customer-checkout'>1- Customer Checkout</h1><h2 id='description'>Description</h2>
 <p>When customer is in your checkout page, you must prepare basic (first name, last name, mobile email)and billing (address, country, city, postal code) info, to have a fast and secure payment.</p>
 <h2 id='diagram-2'>Diagram</h2>
-<p><img src="images/content/customerCheckout-a31cd01e.png" alt="Customer Checkout,img" /></p>
+<p><img src="../images/content/customerCheckout-a31cd01e.png" alt="Customer Checkout,img" /></p>
 <h1 id='2-payment-request'>2- Payment Request</h1><h2 id='url'>URL</h2>
 <p><a href="https://gate.yekpay.com/api/payment/request">https://gate.yekpay.com/api/payment/request</a></p>
 <h2 id='method'>Method</h2>
@@ -787,7 +787,7 @@ method implementation, he may be redirected to a third party/acquirer to make th
 </tr>
 </tbody></table>
 <h2 id='diagram-3'>Diagram</h2>
-<p><img src="images/content/paymetRequest-ad8454b1.png" alt="Payment Request,img" /></p>
+<p><img src="../images/content/paymetRequest-ad8454b1.png" alt="Payment Request,img" /></p>
 
 <aside class="warning">Please consider that all parameters except ‘description’ are required.</aside>
 <h1 id='3-payment-authorization'>3- Payment Authorization</h1><h2 id='description-2'>Description</h2>
@@ -847,7 +847,7 @@ method implementation, he may be redirected to a third party/acquirer to make th
 </tr>
 </tbody></table>
 <h2 id='diagram-4'>Diagram</h2>
-<p><img src="images/content/paymentAuthorization-d3e78ae7.png" alt="Payment Authorization,img" /></p>
+<p><img src="../images/content/paymentAuthorization-d3e78ae7.png" alt="Payment Authorization,img" /></p>
 <h1 id='4-start-payment'>4- Start Payment</h1><h2 id='description-3'>Description</h2>
 <p>If you get Success message in previous step, you can start payment by calling this URL with authority that you get in request method:</p>
 <h2 id='url-2'>URL</h2>
@@ -855,7 +855,7 @@ method implementation, he may be redirected to a third party/acquirer to make th
 
 <aside class="notice">You must replace {Authority} with your authority.</aside>
 <h2 id='diagram-5'>Diagram</h2>
-<p><img src="images/content/startPayment-0dae757c.png" alt="Start Payment,img" /></p>
+<p><img src="../images/content/startPayment-0dae757c.png" alt="Start Payment,img" /></p>
 <h1 id='5-payment-processing'>5- Payment Processing</h1><h2 id='description-4'>Description</h2>
 <p>In this step we process payment (SHETAB or Credit Card) with our Gateways, <strong>9</strong> currencies supported that you can see details in below appendices.</p>
 
@@ -864,7 +864,7 @@ standard.</p>
 
 <p>After Transaction completed (with or without errors), we send <strong>Authority</strong> and Status with <strong>POST</strong> method in your callback URL that you sent in request method. </p>
 <h2 id='diagram-6'>Diagram</h2>
-<p><img src="images/content/paymentProcessing-bbf720c8.png" alt="Payment Processing,img" /></p>
+<p><img src="../images/content/paymentProcessing-bbf720c8.png" alt="Payment Processing,img" /></p>
 <h1 id='6-payment-verification'>6- Payment Verification</h1><h2 id='url-3'>URL</h2>
 <p><a href="https://gate.yekpay.com/api/payment/verify">https://gate.yekpay.com/api/payment/verify</a></p>
 <h2 id='method-2'>Method</h2>
@@ -889,7 +889,7 @@ standard.</p>
 </tr>
 </tbody></table>
 <h2 id='diagram-7'>Diagram</h2>
-<p><img src="images/content/paymentVerification-84af9b12.png" alt="Payment Verification,img" /></p>
+<p><img src="../images/content/paymentVerification-84af9b12.png" alt="Payment Verification,img" /></p>
 <h1 id='7-payment-information'>7- Payment Information</h1><h2 id='description-5'>Description</h2>
 <p>In this step you get response from verify method in JSON format, if the <strong>Code</strong> is equal to “100”, your verification request is successful and you will get other information like <strong>Reference</strong>, <strong>Gateway</strong> , <strong>OrderNo</strong> and <strong>Amount</strong>.</p>
 <h2 id='output-codes-table-2'>Output Codes Table</h2>
@@ -942,7 +942,7 @@ standard.</p>
 </tr>
 </tbody></table>
 <h2 id='diagram-8'>Diagram</h2>
-<p><img src="images/content/paymentInformation-6bf5a7aa.png" alt="Payment Information,img" /></p>
+<p><img src="../images/content/paymentInformation-6bf5a7aa.png" alt="Payment Information,img" /></p>
 <h1 id='request-exchange-rate'>Request Exchange Rate</h1><h2 id='description-6'>Description</h2><h2 id='url-4'>URL</h2>
 <p><a href="https://gate.yekpay.com/api/payment/exchange">https://gate.yekpay.com/api/payment/exchange</a></p>
 <h2 id='method-3'>Method</h2>

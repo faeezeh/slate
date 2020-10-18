@@ -1,0 +1,1120 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>یک پی</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+
+    <style media="screenRTL">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="../stylesheets/screen-37c5a4e0.css" rel="stylesheet" media="screen" />
+    <link href="../stylesheets/screenRTL-ad5d82e4.css" rel="stylesheet" media="screenRTL" />
+    <link href="../stylesheets/print-d90e0447.css" rel="stylesheet" media="print" />
+      <script src="../javascripts/all_nosearch-ea811c3e.js"></script>
+
+  </head>
+
+  <body class="fa fa_index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="../images/logo-3a50bf74.png" class="logo" alt="" />
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#f73976d5e1" class="toc-h1 toc-link" data-title="پیش نیازها">پیش نیازها</a>
+          </li>
+          <li>
+            <a href="#cdcef6d04a" class="toc-h1 toc-link" data-title="نمای کلی">نمای کلی</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#04346518a8" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#1" class="toc-h1 toc-link" data-title="1 . تسویه حساب مشتری">1 . تسویه حساب مشتری</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-2" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#2" class="toc-h1 toc-link" data-title="2 . درخواست پرداخت">2 . درخواست پرداخت</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#f977fabfae" class="toc-h2 toc-link" data-title="لینک درخواست">لینک درخواست</a>
+                  </li>
+                  <li>
+                    <a href="#3ed1a4027a" class="toc-h2 toc-link" data-title="متد">متد</a>
+                  </li>
+                  <li>
+                    <a href="#dc26917bf4" class="toc-h2 toc-link" data-title="ورودی">ورودی</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-3" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#3" class="toc-h1 toc-link" data-title="3۰ اعتبار سنجی تراکنش">3۰ اعتبار سنجی تراکنش</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8-2" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#f7a558cf68" class="toc-h2 toc-link" data-title="کدهای خروجی">کدهای خروجی</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-4" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#4" class="toc-h1 toc-link" data-title="4 . شروع فرآیند تراکنش">4 . شروع فرآیند تراکنش</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8-3" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#10fa5ce97b" class="toc-h2 toc-link" data-title="آدرس">آدرس</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-5" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#5" class="toc-h1 toc-link" data-title="5 . پردازش تراکنش">5 . پردازش تراکنش</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8-4" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-6" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#6" class="toc-h1 toc-link" data-title="6۰ تاکید تراکنش">6۰ تاکید تراکنش</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#10fa5ce97b-2" class="toc-h2 toc-link" data-title="آدرس">آدرس</a>
+                  </li>
+                  <li>
+                    <a href="#3ed1a4027a-2" class="toc-h2 toc-link" data-title="متد">متد</a>
+                  </li>
+                  <li>
+                    <a href="#dc26917bf4-2" class="toc-h2 toc-link" data-title="ورودی">ورودی</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-7" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#7" class="toc-h1 toc-link" data-title="7۰ اطلاعات تراکنش">7۰ اطلاعات تراکنش</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8-5" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#f7a558cf68-2" class="toc-h2 toc-link" data-title="کدهای خروجی">کدهای خروجی</a>
+                  </li>
+                  <li>
+                    <a href="#04346518a8-8" class="toc-h2 toc-link" data-title="نمودار">نمودار</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#2080ee13be" class="toc-h1 toc-link" data-title="استعلام نرخ ارز">استعلام نرخ ارز</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#55bbd4b9a8-6" class="toc-h2 toc-link" data-title="توضیحات">توضیحات</a>
+                  </li>
+                  <li>
+                    <a href="#10fa5ce97b-3" class="toc-h2 toc-link" data-title="آدرس">آدرس</a>
+                  </li>
+                  <li>
+                    <a href="#3ed1a4027a-3" class="toc-h2 toc-link" data-title="متد">متد</a>
+                  </li>
+                  <li>
+                    <a href="#d1ba2ac09f" class="toc-h2 toc-link" data-title="ورودی ها">ورودی ها</a>
+                  </li>
+                  <li>
+                    <a href="#f7a558cf68-3" class="toc-h2 toc-link" data-title="کدهای خروجی">کدهای خروجی</a>
+                  </li>
+                  <li>
+                    <a href="#6c10e02ee7" class="toc-h2 toc-link" data-title="دریافت اطلاعات مکانی کاربر">دریافت اطلاعات مکانی کاربر</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#55bbd4b9a8-7" class="toc-h1 toc-link" data-title="توضیحات">توضیحات</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#10fa5ce97b-4" class="toc-h2 toc-link" data-title="آدرس">آدرس</a>
+                  </li>
+                  <li>
+                    <a href="#3ed1a4027a-4" class="toc-h2 toc-link" data-title="متد">متد</a>
+                  </li>
+                  <li>
+                    <a href="#d1ba2ac09f-2" class="toc-h2 toc-link" data-title="ورودی ها">ورودی ها</a>
+                  </li>
+                  <li>
+                    <a href="#f7a558cf68-4" class="toc-h2 toc-link" data-title="کدهای خروجی">کدهای خروجی</a>
+                  </li>
+                  <li>
+                    <a href="#e348963f1d" class="toc-h2 toc-link" data-title="ضمیمه اول: کشورها">ضمیمه اول: کشورها</a>
+                  </li>
+                  <li>
+                    <a href="#7168108636" class="toc-h2 toc-link" data-title="ضمیمه دوم : منابع">ضمیمه دوم : منابع</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='f73976d5e1'>پیش نیازها</h1>
+<p>این سند حاوی پروتکل هایی است که از متدهای پرداخت به شرح ذیل استفاده می کند:
+متد پرداخت یک پی:
+متد پرداخت یک پی، پروتکل هایی را که مابین کسب و کارها ) یا ارایه دهندگان خدمات پرداخت( و یک پی هستند،تایید می کند:</p>
+
+<p><strong>Payment Request</strong> متد درخواست پرداخت، تراکنش را با داده های کاربر شروع می کند. اگر داده ها در وضعیت صحیح و یا مورد قبول باشند، مشتری به صفحه پرداخت ارجاع داده می شود تا بتواند اطلاعات کارت شتاب یا کارت بین المللی خود را وارد کند.</p>
+
+<p><strong>Verify Payment</strong> از متد تایید پرداخت، بلافاصله پس از متد درخواست و جهت تایید تراکنش استفاده می شود. اگر داده ها و عملیات پرداخت در وضعیت صحیح و یا مورد قبول باشد، وضعیت تراکنش از در حالت انتظار به تایید، تغییر می کند.</p>
+
+<p><strong>Exchange Rate</strong> از این متد برای تبدیل ارز بین دو واحد مختلف استفاده می شود. اگر داده ها در وضعیت صحیح و یا مورد قبول باشد، آخرین نرخ بین دو ارز نمایش داده خواهد شد.</p>
+
+<p><strong>Get User Location</strong> از این متد برای دریافت اطلاعات مکانی کاربران از روی آی پی استفاده می کنیم.</p>
+<h1 id='cdcef6d04a'>نمای کلی</h1>
+<p>پروتکل درگاه پرداخت یک پی می تواند توسط هرگونه شخص ثالثی برای بررسی اطلاعات سفارش و تایید شروع پرداخت
+ها مورد استفاده قرار گیرد.</p>
+
+<p>در ابتدا، یک پی باید درخواست <strong>Payment Request</strong> را با ارجاع خریدار به وبسایت کسب و کار برای ثبت سفارش
+جدید دریافت کند.</p>
+
+<p>زمانی که خریدار فرآیند ثبت درخواست را از سمت یک پی به پایان می رساند، بسته به نحوه پیاده سازی متد پرداخت،
+ممکن است برای تکمیل پرداخت به صفحه شخص ثالث یا فروشنده فراخوانده شود.</p>
+
+<p>همچنین فروشنده می تواند اطلاعات سفارش را قبل از شارژ خریدار در سیستم یک پی بررسی و متد <strong>Payment Verify</strong>
+را صدا کند.</p>
+<h2 id='04346518a8'>نمودار</h2>
+<p><img src="../images/content/overviewFa-bcb68c6f.png" alt="overview,img" /></p>
+<h1 id='1'>1 . تسویه حساب مشتری</h1><h2 id='55bbd4b9a8'>توضیحات</h2>
+<p>زمانی که مشتری در صفحه تسویه حساب سایت شما باشد، باید امکان ورود اطلاعات هویتی )از قبیل نام، نام خانوادگی،
+شماره موبایل و ایمیل( و اطلاعات صورتحساب )از قبیل آدرس، کشور، شهر و کدپستی( را داشته باشد تا بتواند پرداختی
+سریع و امن انجام دهد.</p>
+<h2 id='04346518a8-2'>نمودار</h2>
+<p><img src="../images/content/customerCheckoutFa-0a6fe8f4.png" alt="Customer Checkout,img" /></p>
+<h1 id='2'>2 . درخواست پرداخت</h1><h2 id='f977fabfae'>لینک درخواست</h2>
+<p><a href="https://gate.yekpay.com/api/payment/request">https://gate.yekpay.com/api/payment/request</a></p>
+<h2 id='3ed1a4027a'>متد</h2>
+<p>POST</p>
+<h2 id='dc26917bf4'>ورودی</h2>
+<table><thead>
+<tr>
+<th>PARAMETERS</th>
+<th>DESCRIPTION</th>
+<th>EXAMPLE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>merchantId</td>
+<td>32-digits merchant code</td>
+<td>XXXXXXXXXXXXXXXXXXXX</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Amount of your order (with Decimal (15,2)format)</td>
+<td>799.00</td>
+</tr>
+<tr>
+<td>fromCurrencyCode</td>
+<td>Origin currency code</td>
+<td>978</td>
+</tr>
+<tr>
+<td>toCurrencyCode</td>
+<td>Destination currency code</td>
+<td>364</td>
+</tr>
+<tr>
+<td>orderNumber</td>
+<td>Unique order id for each merchant</td>
+<td>125548</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>Callback URL of merchant website</td>
+<td>https://example.com/callback.php</td>
+</tr>
+<tr>
+<td>firstName</td>
+<td>First name of your customer</td>
+<td>John</td>
+</tr>
+<tr>
+<td>lastName</td>
+<td>Last name of your customer</td>
+<td>Doe</td>
+</tr>
+<tr>
+<td>email</td>
+<td>Email of your customer</td>
+<td>test@example.com</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>Mobile of your customer</td>
+<td>+44123456789</td>
+</tr>
+<tr>
+<td>address</td>
+<td>Billing address</td>
+<td>Alhamida st Al ras st</td>
+</tr>
+<tr>
+<td>postalCode</td>
+<td>Billing postal code</td>
+<td>64785</td>
+</tr>
+<tr>
+<td>country</td>
+<td>United Arab Emirates</td>
+<td>Billing country</td>
+</tr>
+<tr>
+<td>city</td>
+<td>Billing city</td>
+<td>Dubai</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Name of your products or your services</td>
+<td>Apple mac book air 2017</td>
+</tr>
+</tbody></table>
+<h2 id='04346518a8-3'>نمودار</h2>
+<p><img src="../images/content/paymentRequestFa-03811a86.png" alt="Payment Request,img" /></p>
+
+<aside class="warning">در نظر داشته باشید تمامی پارامترها به جز " **description** " الزامی هستند.</aside>
+<h1 id='3'>3۰ اعتبار سنجی تراکنش</h1><h2 id='55bbd4b9a8-2'>توضیحات</h2>
+<p>‫پس از فراخوانی متد درخواست، پاسخی با فرمت JSON محتوی کد، توضیحات و فیلدهای اعتبارسنجی دریافت خواهید کرد. در صورت دریافت کد عدد 100 ، می توانید وارد مرحله بعد شوید.‬</p>
+<h2 id='f7a558cf68'>کدهای خروجی</h2>
+<table><thead>
+<tr>
+<th>CODE</th>
+<th>DESCRIPTION</th>
+<th>AUTHORITY</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>-1</td>
+<td>The parameters are incomplete</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>Merchant code is incorrect</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>Merchant code is not active</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-4</td>
+<td>Currencies is not valid</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-5</td>
+<td>Maximum/Minimum amount is not valid</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-6</td>
+<td>Your IP is restricted</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-7</td>
+<td>Order id must be unique</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-100</td>
+<td>Unknown error</td>
+<td>0</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Success</td>
+<td>XXXXXXXXXXXX</td>
+</tr>
+</tbody></table>
+<h2 id='04346518a8-4'>نمودار</h2>
+<p><img src="../images/content/paymentAuthorizationFaa-b931aac5.png" alt="Payment Authorization,img" /></p>
+<h1 id='4'>4 . شروع فرآیند تراکنش</h1><h2 id='55bbd4b9a8-3'>توضیحات</h2>
+<p>اگر در مرحله قبل پیغام &quot;موفقیت آمیز&quot; دریافت کرده اید، می توانید با کد <strong>Authority</strong> که در متد درخواست دریافت کردهاید و فراخوانی آدرس زیر، فرآیند پرداخت را شروع کنید.</p>
+<h2 id='10fa5ce97b'>آدرس</h2>
+<p><a href="https://gate.yekpay.com/api/payment/start/{AUTHORITY}">https://gate.yekpay.com/api/payment/start/{AUTHORITY}</a></p>
+
+<aside class="notice">
+درنظر داشته باشید {AUTHORITY} موجود در لینک فوق باید با authority دریافتی شما جایگزین شود.
+</aside>
+<h2 id='04346518a8-5'>نمودار</h2>
+<p><img src="../images/content/startPaymentFa-a92bdbd0.png" alt="Start Payment,img" /></p>
+<h1 id='5'>5 . پردازش تراکنش</h1><h2 id='55bbd4b9a8-4'>توضیحات</h2>
+<p>در این مرحله فرآیند تراکنش )توسط کارت شتاب یا کارت بین المللی( توسط درگاه پرداخت ما پردازش می شود. اطلاعات ارزهای قابل استفاده ) 9 ارز ی که توسط ما پشتیبانی می شون د(، در ضمیمه های بعد در دسترس خواهند بود.
+لطفا در نظر داشته باشید که تمامی درگاه های پرداخت بین المللی ما از گزینه  3 D-secure پشتیبانی می کنند و این گزینه نیز باید برای کارت مشتری شما فعال باشد.</p>
+
+<p>زمانی که فرآیند تراکنش تکمیل شد، )با یا بدون خطا( اعتبارسنجی و وضعیت تراکنش با متد <strong>POST</strong> به آدرسی که در متد درخواست توسط شما فرستاده شده بود، ارسال می شود.</p>
+<h2 id='04346518a8-6'>نمودار</h2>
+<p><img src="../images/content/paymentProcessingFa-85e67988.png" alt="Payment Processing,img" /></p>
+<h1 id='6'>6۰ تاکید تراکنش</h1><h2 id='10fa5ce97b-2'>آدرس</h2>
+<p><a href="https://gate.yekpay.com/api/payment/verify">https://gate.yekpay.com/api/payment/verify</a></p>
+<h2 id='3ed1a4027a-2'>متد</h2>
+<p>POST</p>
+<h2 id='dc26917bf4-2'>ورودی</h2>
+<table><thead>
+<tr>
+<th>PARAMETERS</th>
+<th>DESCRIPTION</th>
+<th>EXAMPLE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>merchantId</td>
+<td>32-digits merchant code</td>
+<td>XXXXXXXXXXXXXXXXXXXX</td>
+</tr>
+<tr>
+<td>authority</td>
+<td>Authority code that you get before in request method</td>
+<td>115162456765</td>
+</tr>
+</tbody></table>
+<h2 id='04346518a8-7'>نمودار</h2>
+<p><img src="../images/content/paymentVerificationFa-23867df2.png" alt="Payment Verification,img" /></p>
+<h1 id='7'>7۰ اطلاعات تراکنش</h1><h2 id='55bbd4b9a8-5'>توضیحات</h2>
+<p>در این مرحله پاسخی از سمت متد تایید تراکنش با فرمت JSON دریافت خواهید کرد، که اگر این کد برابر &quot; 100 &quot; باشد، درخواست تایید شما موفقیت آمیز بوده اطلاعاتی مانند <strong>Reference</strong> ، <strong>Gateway</strong>, <strong>OrderNo</strong> و <strong>Amount</strong> دریافت خواهید کرد.</p>
+<h2 id='f7a558cf68-2'>کدهای خروجی</h2>
+<table><thead>
+<tr>
+<th>CODE</th>
+<th>DESCRIPTION</th>
+<th>REFERENCE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>-1</td>
+<td>The parameters are incomplete</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>Merchant code is incorrect</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>Merchant code is not active</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-8</td>
+<td>Currencies is not valid</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-9</td>
+<td>Maximum/Minimum amount is not valid</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-10</td>
+<td>Your IP is restricted</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-100</td>
+<td>Unknown error</td>
+<td>0</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Success</td>
+<td>XXXXXXXXXXXX</td>
+</tr>
+</tbody></table>
+<h2 id='04346518a8-8'>نمودار</h2>
+<p><img src="../images/content/paymentInformationFa-5097a3a0.png" alt="Payment Information,img" /></p>
+<h1 id='2080ee13be'>استعلام نرخ ارز</h1><h2 id='55bbd4b9a8-6'>توضیحات</h2><h2 id='10fa5ce97b-3'>آدرس</h2>
+<p><a href="https://gate.yekpay.com/api/payment/exchange">https://gate.yekpay.com/api/payment/exchange</a></p>
+<h2 id='3ed1a4027a-3'>متد</h2>
+<p>POST </p>
+<h2 id='d1ba2ac09f'>ورودی ها</h2>
+<table><thead>
+<tr>
+<th>PARAMETERS</th>
+<th>DESCRIPTION</th>
+<th>EXAMPLE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>merchantId</td>
+<td>32-digits merchant code that you can get from Yekpay after submit payment gateway</td>
+<td>XXXXXXXXXXXXXXXXXXXX</td>
+</tr>
+<tr>
+<td>FromCurrencyCode</td>
+<td>Currency code with ISO 8581 according to currency table</td>
+<td>978</td>
+</tr>
+<tr>
+<td>ToCurrencyCode</td>
+<td>Currency code with ISO 8581 according to currency table</td>
+<td>364</td>
+</tr>
+</tbody></table>
+<h2 id='f7a558cf68-3'>کدهای خروجی</h2>
+<table><thead>
+<tr>
+<th>CODE</th>
+<th>DESCRIPTION</th>
+<th>AUTHORITY</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>-1</td>
+<td>The parameters are incomplete</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>Merchant code is incorrect</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>Merchant code is not active</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-4</td>
+<td>Currencies is not invalid</td>
+<td>0</td>
+</tr>
+<tr>
+<td>-100</td>
+<td>Unknown error</td>
+<td>0</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Success</td>
+<td>0.14000</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+در صورت موفق بودن شما اطلاعات اضافی مانند **Rate** را دریافت می کنید که نرخ تبدیل بین دو ارز مورد نیاز شما می باشد.
+</aside>
+<h2 id='6c10e02ee7'>دریافت اطلاعات مکانی کاربر</h2><h1 id='55bbd4b9a8-7'>توضیحات</h1>
+<p>به دلیل در دسترس نبودن درگاه پرداخت یک پی در تمامی کشورها، شما می توانید از این API به واسطه IP کاربر برای تشخیص موقعیت مکانی کاربر جهت شروع عملیات تراکنش، استفاده کنید </p>
+<h2 id='10fa5ce97b-4'>آدرس</h2>
+<p><a href="https://gate.yekpay.com/api/payment/country">https://gate.yekpay.com/api/payment/country</a></p>
+<h2 id='3ed1a4027a-4'>متد</h2>
+<p>POST</p>
+<h2 id='d1ba2ac09f-2'>ورودی ها</h2>
+<table><thead>
+<tr>
+<th>PARAMETERS</th>
+<th>DESCRIPTION</th>
+<th>EXAMPLE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ip</td>
+<td>User IP address</td>
+<td>78.46.162.156</td>
+</tr>
+</tbody></table>
+<h2 id='f7a558cf68-4'>کدهای خروجی</h2>
+<table><thead>
+<tr>
+<th>CODE</th>
+<th>DESCRIPTION</th>
+<th>REFERENCE</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>-1</td>
+<td>The parameters are incomplete</td>
+<td></td>
+</tr>
+<tr>
+<td>-11</td>
+<td>Your IP isn’t valid</td>
+<td></td>
+</tr>
+<tr>
+<td>-12</td>
+<td>Your IP is unknown</td>
+<td></td>
+</tr>
+<tr>
+<td>-100</td>
+<td>Unknown error</td>
+<td></td>
+</tr>
+<tr>
+<td>100</td>
+<td>Success</td>
+<td>DE</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+در صورت موفق بودن درخواست شما ئارامتر اضافی با نام **Country** دریافت می کنید که کشور درخواست دهنده را با فرمت دو حرفی مشخص می کند.
+</aside>
+<h2 id='e348963f1d'>ضمیمه اول: کشورها</h2>
+<table><thead>
+<tr>
+<th>Currency</th>
+<th>Name</th>
+<th>Code</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>EUR</td>
+<td>Euro</td>
+<td>978</td>
+</tr>
+<tr>
+<td>IRR</td>
+<td>Iranian Rial</td>
+<td>364</td>
+</tr>
+<tr>
+<td>CHF</td>
+<td>Switzerland Franc</td>
+<td>756</td>
+</tr>
+<tr>
+<td>AED</td>
+<td>United Arab Emirates Dirham</td>
+<td>784</td>
+</tr>
+<tr>
+<td>CNY</td>
+<td>Chinese Yuan</td>
+<td>156</td>
+</tr>
+<tr>
+<td>GBP</td>
+<td>British Pound</td>
+<td>826</td>
+</tr>
+<tr>
+<td>JPY</td>
+<td>Japanese 100 Yens</td>
+<td>392</td>
+</tr>
+<tr>
+<td>RUB</td>
+<td>Russian Ruble</td>
+<td>643</td>
+</tr>
+<tr>
+<td>TRY</td>
+<td>Turkish New Lira</td>
+<td>494</td>
+</tr>
+</tbody></table>
+<h2 id='7168108636'>ضمیمه دوم : منابع</h2>
+<p>You can visit Yekpay GitHub page in order to access sample codes (e.g. PHP, C#, Python).</p>
+
+<p>Also, we have some plugins for popular CMS like <strong>WooCommerce, Magento, Prestashop, etc</strong>.</p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
